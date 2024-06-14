@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./styles/style1.css"><!--(link)é utilizado para acessar recursos externos da página. (rel)é utilizado para falar qual é a categoria do arquivo que estamos linkando. (stylesheet)é o tipo, significa folha de estilo. href e o endereço para achar aonde esta -->
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="Portifolio.html">Home</a>
+            <a class="cabecalho_menu_link" href="aboutJ.html">Sobre mim</a>
+        </nav>
+    </header> <!--header é um cabeçalho que vai ser visivel dentro do site-->
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo"> <!--dividir o conteúdo em macro estruturas, em blocos.-->
+            <h1 class="apresentacao_conteudo_titulo">Transformando Criatividade em Código: <strong class="titulo-destaque"> A Jornada de uma Desenvolvedora Apaixonada por Backend!</strong> </h1> <!--<strong>dá ao texto uma forte importância, e é tipicamente mostrado em negrito. (class: "um nome") para diferenciar dos outros strong-->
+            <p class="apresentacao_conteudo_texto">Olá! Sou Jhenifer Alves Guimaraes, desenvolvedora Back-end com especialidade em JAVA, C#, C++ e TDD. Sou estudante de Engenharia da Computação na faculdade UNIUBE, no momento faço pequenos projetos na faculdade para alguns colegas. Vamos conversar?</p>
+            <div class="apresentacao_links"> <!--é frequentemente utilizada quando precisamos agrupar elementos sem usar as tags semânticas do HTML. Isso acontece porque a <div> não tem valor semântico. Portanto, não significa nada para os navegadores e mecanismos de pesquisa.-->
+                <h2 class="apresentacao_links_subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao_links_navegacao" href="https://github.com/JheniferAguia">
+                    <img src="./assets/github.png" alt="Imagem do GitHub"> GitHub
+                </a> <!-- (href)é um atributo da tag de âncora (de links)-->
+                <a class="apresentacao_links_navegacao" href="https://br.linkedin.com/in/jhenifer-alves-4542bb251">
+                    <img src="./assets/linkedin.png" alt="Imagem do Linkedin"> Linkedin
+                </a>
+                <a class="apresentacao_links_navegacao" href="https://www.instagram.com/jheni_alves_g?igsh=NXNvMGN2OThzZmt3">
+                    <img src="./assets/instagram.png" alt="Imagem do Instagram"> Instagram
+                </a> <!--<a>cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.-->
+                
+            </div>
+        </section>
+        <img class="apresentação__imagem" src="./assets/foto001.png" alt="Foto da Jhenifer Alves Guimaraes">
+    </main> <!--define o conteúdo principal dentro do <body> em seu documento ou aplicação.-->
+    <footer>
+        <P class="rodape">Desenvolvido por Jhenifer Alves Guimaraes.</P>
+    </footer> <!-- é o rodapé de nosso site-->
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{/* comumente usado para definir variáveis CSS que podem ser acessadas em qualquer lugar do documento. */
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-tercearia: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserra', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;/*altura para a página*/
+    box-sizing: border-box;/*(box-sizing)que possibilita a modificação da forma que o tamanho do elemento é calculado no CSS.(border-box) faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    background-color: var(--cor-primaria); /* background-color para definir o fundo do corpo da página e depois a cor */
+    color: var(--cor-secundaria); /*cor do texto*/
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding:5% 15%;
+    display: flex;/*(display)permite que você defina a maneira como determinado elemento HTML deve ser renderizado.(flex)criar leiautes, alinhar e distribuir espaços entre itens em um container, mesmo quando as dimensões destes itens são desconhecidas e/ou dinâmicas*/
+    align-items: center;/*(align-items)controla o alinhamento de todos os itens no eixo transversal.(center)coloca no centro*/
+    justify-content: space-between;/*(justify-content)é usada para alinhar os elementos ao longo do eixo principal.(space-between)A primeira linha é deslocada para o início do eixo transversal, a última é deslocada para o final do eixo transversal e as demais são distribuídas uniformemente entre eles */
+    gap: 82px;
+}
+
+.apresentacao_conteudo{
+    width: 50%;/*largura*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 1.5rem; /*mudando para rem que é é o tamanho de fonte do elemento-raiz do documento divídido por 16 -> (24px / 16)*/
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque{/*(.)para informar que estamos buscando uma class e (titulo-destaque) o nome da class*/
+    color:var(--cor-tercearia);
+}
+
+.apresentacao_conteudo_titulo:hover{
+    color: blue;
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.apresentacao_links_navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-tercearia);/*(solide)para a borda em ser linha */
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;/*raio da borda*/
+    font-size: 1.5rem;
+    font-weight: 600;/*tamanho da fonte*/
+    padding: 21.5px 0;
+    text-decoration: none;/*tirar a decoração automatica de sublinhagem*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links_navegacao:hover{ /*(hover)para aplicar estilos em um link quando o mouse passa por cima dele. */
+    background-color: var(--cor-hover);
+    padding: 4%;
+}
+
+.apresentação__imagem{
+    width: 50%;
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    text-align: center; /*(text-align)alinha um texto */
+    font-family: var(--fonte-secundaria);
+    font-size: 1.375rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+
+    
+}
